@@ -567,7 +567,11 @@ p {
     }
     
     .nav-links a {
-        font-size: 1.25rem;
+        font-size: 0.85rem;
+    }
+    
+    .logo-img {
+        height: 34px;
     }
     
     .footer-content {
