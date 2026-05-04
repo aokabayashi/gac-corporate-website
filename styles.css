@@ -567,11 +567,11 @@ p {
     }
     
     .nav-links a {
-        font-size: 0.85rem;
+        font-size: 0.85rem !important;
     }
     
     .logo-img {
-        height: 34px;
+        height: 34px !important;
     }
     
     .footer-content {
