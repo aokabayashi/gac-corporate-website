@@ -107,6 +107,21 @@ p {
     color: var(--primary);
     text-decoration: none;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 .navbar.scrolled .logo, .navbar.scrolled .nav-links a {
