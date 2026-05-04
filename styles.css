@@ -488,6 +488,19 @@ p {
         gap: 0.5rem;
     }
     
+    .navbar {
+        background: var(--glass-bg) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        box-shadow: var(--shadow-subtle) !important;
+        padding: 1rem 0 !important;
+    }
+    
+    .navbar .logo, .navbar .nav-links a {
+        color: var(--primary) !important;
+        text-shadow: none !important;
+    }
+    
     .nav-links {
         display: flex;
         flex-wrap: wrap;
