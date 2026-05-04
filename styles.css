@@ -483,8 +483,20 @@ p {
         font-size: 2.5rem;
     }
     
+    .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
     .nav-links {
-        display: none; /* Handle with JS later for mobile menu */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
     }
     
     .footer-content {
