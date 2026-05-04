@@ -415,6 +415,62 @@ p {
     color: var(--text-main);
 }
 
+/* Representative Profile */
+.representative-profile {
+    max-width: 800px;
+    margin: 4rem auto 0;
+}
+
+.profile-header {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.profile-header h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.profile-header p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.profile-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+}
+
+.profile-card h4 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-card h4 span {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.profile-card p {
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.profile-card p:last-child {
+    margin-bottom: 0;
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary);
@@ -518,6 +574,20 @@ p {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
+    }
+    
+    .profile-card {
+        padding: 1.5rem;
+    }
+    
+    .profile-card h4 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    
+    .profile-card h4 .pipe {
+        display: none;
     }
     
     .footer-contact {
