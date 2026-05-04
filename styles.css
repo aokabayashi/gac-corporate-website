@@ -136,6 +136,7 @@ p {
 .nav-links {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -144,6 +145,8 @@ p {
     font-size: 0.95rem;
     transition: color 0.3s ease;
     position: relative;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .nav-links a::after {
