@@ -1052,12 +1052,12 @@ p {
     
     .team-stats-list li {
         width: 100%;
-        max-width: none; /* 左右ではなく上下を詰めるため、横幅制限は解除 */
-        font-size: 0.8rem;
+        max-width: none; 
+        font-size: 0.95rem; /* 文字サイズを戻して読みやすく */
         gap: 15px;
     }
     .team-stats-list .count {
-        font-size: 1.05rem; /* 数字を小さくしてバランスを取る */
+        font-size: 1.15rem; /* 数字の存在感を戻す */
     }
     .flow-tag-row {
         flex-direction: column;
