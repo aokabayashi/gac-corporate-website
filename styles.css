@@ -474,7 +474,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 0.5rem;
+    padding-top: 4px; /* Perfectly aligns with the center of the first row on the right */
 }
 
 .phase-title {
@@ -510,7 +510,7 @@ p {
     position: absolute;
     left: 1.5px; /* Center of the 3px line */
     transform: translateX(-50%);
-    top: 0;
+    top: 2px; /* Vertical adjustment to center numbers with tags/titles */
     font-size: 1.5rem;
     font-weight: 800;
     color: #cbd5e1;
@@ -518,7 +518,7 @@ p {
     padding: 0 5px;
     z-index: 2;
     line-height: 1;
-    letter-spacing: -0.05em; /* Tighten digits slightly while keeping center aligned */
+    letter-spacing: -0.05em;
 }
 
 /* Arrow at the bottom of the line */
