@@ -877,5 +877,23 @@ p {
     .flow-divider {
         grid-column: 1;
         margin-left: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+        padding: 0.8rem 1.2rem;
+    }
+    
+    .flow-catchphrase {
+        font-size: 0.9rem;
+    }
+    
+    .flow-tag-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .flow-catchphrase::before {
+        display: none;
     }
 }
