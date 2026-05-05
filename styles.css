@@ -847,9 +847,13 @@ p {
         padding-top: 0;
     }
     
+    .value-flow {
+        padding: 2rem 1rem;
+    }
+    
     .flow-item {
         grid-template-columns: 1fr;
-        gap: 0.5rem;
+        gap: 0rem;
     }
     
     .flow-side {
@@ -857,8 +861,9 @@ p {
     }
     
     .flow-main {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         padding-left: 1.5rem;
+        border-left-width: 1px;
     }
     
     .flow-tag-row {
@@ -876,11 +881,12 @@ p {
     
     .flow-divider {
         grid-column: 1;
-        margin-left: 1.5rem;
+        margin-left: 0;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 0.3rem;
-        padding: 0.8rem 1.2rem;
+        padding: 0.8rem 1rem;
     }
     
     .flow-catchphrase {
