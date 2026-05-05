@@ -878,7 +878,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 320px; /* Fixed container for aligned numbers */
+    width: 420px; /* Expanded from 320px to fit longer qualification titles in one line */
 }
 
 .team-stats-list .qualification {
