@@ -653,8 +653,10 @@ p {
 }
 
 .flow-divider {
-    grid-column: 2;
-    padding: 1rem 2.2rem;
+    grid-column: 1 / span 2; /* PC版で左側の空白をなくすため span 2 に変更 */
+    justify-self: center;    /* 中央に配置 */
+    width: fit-content;      /* 内容に合わせてコンパクトにする */
+    padding: 1rem 3rem;
     background: #f0f7ff;
     border: 1px solid #cbd5e1;
     border-radius: 4px;
