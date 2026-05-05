@@ -1048,8 +1048,9 @@ p {
     
     .team-stats-list li {
         width: 100%;
-        max-width: 350px;
-        font-size: 0.85rem; /* スマホで文字サイズを下げ、余白のバランスを改善 */
+        max-width: none; /* 制限を解除し、画面端までゆとりを持たせる */
+        font-size: 0.8rem; /* 更にサイズを下げて余白を確保 */
+        gap: 20px;
     }
     .flow-tag-row {
         flex-direction: column;
