@@ -1047,6 +1047,14 @@ p {
         gap: 0.5rem;
     }
     
+    .flow-divider {
+        margin: 1.5rem auto; /* スマホ版はシンプルに中央寄せ */
+        transform: none;      /* PC版のずらし設定を解除 */
+        width: fit-content;
+        padding: 0.8rem 1.5rem;
+        display: block;
+        text-align: center;
+    }
     .flow-catchphrase::before {
         display: none;
     }
