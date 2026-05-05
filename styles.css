@@ -578,7 +578,8 @@ p {
 .flow-divider {
     grid-column: 2;
     padding: 1rem 2.2rem;
-    background: #f1f5f9;
+    background: #f0f7ff;
+    border: 1px solid #cbd5e1;
     border-radius: 4px;
     font-weight: 700;
     font-size: 0.9rem;
