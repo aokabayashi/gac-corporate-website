@@ -474,7 +474,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 3.5px; /* Precisely calculated center line */
+    padding-top: 5px; /* Precision downward shift to match tag row center */
 }
 
 .phase-title {
@@ -522,7 +522,7 @@ p {
     position: absolute;
     left: 1.5px;
     transform: translateX(-50%);
-    top: 3.5px; /* Precision downward shift to match tag center */
+    top: 5px; /* Precision downward shift to match tag center */
     font-size: 1.4rem;
     font-weight: 800;
     color: #cbd5e1;
@@ -531,6 +531,18 @@ p {
     z-index: 2;
     line-height: 1;
     letter-spacing: -0.05em;
+}
+
+/* Mask the timeline line sticking out above the numbers */
+.flow-dot::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #f8fafc; /* Match Value Flow background */
+    z-index: -1;
 }
 
 /* Arrow at the bottom of the line */
