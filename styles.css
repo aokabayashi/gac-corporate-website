@@ -342,42 +342,53 @@ p {
 
 .value-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     margin-bottom: 5rem;
 }
 
 .value-card {
     background: white;
-    padding: 1.5rem 2rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow-subtle);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    border-top: 4px solid transparent;
+    text-align: left;
 }
 
 .value-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-    border-top-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-.card-icon {
-    font-size: 3rem;
+.card-header-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-num {
+    font-size: 2.2rem;
     font-weight: 700;
-    color: rgba(15, 23, 42, 0.15); /* darker faint primary */
-    margin-bottom: 1rem;
+    color: #f1f5f9;
     line-height: 1;
 }
 
-.card-title {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+.card-tag {
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .card-text {
-    color: var(--text-muted);
+    color: var(--text-main);
     font-size: 0.95rem;
+    line-height: 1.8;
 }
 
 /* Value Flow Section */
@@ -890,6 +901,24 @@ p {
     
     .flow-tag-row {
         gap: 0.5rem;
+    }
+    
+    .value-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-header-row {
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-num {
+        font-size: 1.8rem;
+    }
+    
+    .card-tag {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
     }
     
     .flow-message-box {
