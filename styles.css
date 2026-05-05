@@ -1049,7 +1049,7 @@ p {
     .team-stats-list li {
         width: 100%;
         max-width: 350px;
-        font-size: 0.95rem; /* スマホで1行に収まりやすく調整 */
+        font-size: 0.85rem; /* スマホで文字サイズを下げ、余白のバランスを改善 */
     }
     .flow-tag-row {
         flex-direction: column;
