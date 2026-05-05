@@ -1046,6 +1046,11 @@ p {
         font-size: 0.9rem;
     }
     
+    .team-stats-list li {
+        width: 100%;
+        max-width: 350px;
+        font-size: 0.95rem; /* スマホで1行に収まりやすく調整 */
+    }
     .flow-tag-row {
         flex-direction: column;
         align-items: flex-start;
