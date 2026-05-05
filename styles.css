@@ -451,8 +451,9 @@ p {
     font-weight: 700;
     font-size: 1.1rem;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0.02em;
+    text-align: center; /* Maintained center-align for PC */
 }
 
 .flow-container {
@@ -853,7 +854,7 @@ p {
     line-height: 2;
     color: var(--text-main);
     margin-bottom: 3.5rem;
-    text-align: center;
+    text-align: center; /* Maintained center-align for PC */
     font-weight: 500;
 }
 
@@ -1049,5 +1050,8 @@ p {
     }
     .pc-only {
         display: none;
+    }
+    .team-long-description, .flow-message-box p {
+        text-align: left; /* Mobile-only left align */
     }
 }
