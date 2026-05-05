@@ -465,13 +465,23 @@ p {
 .flow-main {
     position: relative;
     padding-left: 2.2rem;
-    border-left: 3px solid #cbd5e1;
 }
 
+/* The Vertical Line */
 .flow-main::before {
     content: '';
     position: absolute;
-    left: -4.5px; /* Centered on 3px border (center at 1.5px, width 12px -> 1.5 - 6 = -4.5) */
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #cbd5e1;
+    z-index: 1;
+}
+
+.flow-dot {
+    position: absolute;
+    left: -4.5px; /* Centered on 3px line (center at 1.5px, width 12px -> 1.5 - 6 = -4.5) */
     top: 10px;
     width: 12px;
     height: 12px;
@@ -484,13 +494,14 @@ p {
 .flow-main::after {
     content: '';
     position: absolute;
-    left: -5.5px; /* Centered on 3px border (center at 1.5px, width 14px -> 1.5 - 7 = -5.5) */
+    left: -5.5px; /* Centered on 3px line (center at 1.5px, width 14px -> 1.5 - 7 = -5.5) */
     bottom: 0;
     width: 0;
     height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 11px solid #cbd5e1;
+    z-index: 2;
 }
 
 .flow-item:last-child .flow-main {
@@ -873,7 +884,7 @@ p {
     .flow-main {
         margin-top: 0.5rem;
         padding-left: 1.5rem;
-        border-left: 3px solid #cbd5e1;
+        border-left: none;
     }
     
     .flow-tag-row {
