@@ -474,7 +474,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 2px; /* Center-line tweak */
+    padding-top: 3.5px; /* Precisely calculated center line */
 }
 
 .phase-title {
@@ -509,25 +509,25 @@ p {
 
 /* Only Phase 1 line starts from the number's center */
 .flow-item:first-of-type .flow-main::before {
-    top: 14px;
-    height: calc(100% - 14px);
+    top: 15px;
+    height: calc(100% - 15px);
 }
 
 /* Only last phase line ends at the number's center */
 .flow-item:last-of-type .flow-main::before {
-    height: 14px;
+    height: 15px;
 }
 
 .flow-dot {
     position: absolute;
-    left: -2.35rem; /* Precise negative margin to sit on the timeline */
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 1.5px;
+    transform: translateX(-50%);
+    top: 3.5px; /* Precision downward shift to match tag center */
     font-size: 1.4rem;
     font-weight: 800;
     color: #cbd5e1;
     background: #f8fafc;
-    padding: 0 4px;
+    padding: 0 5px;
     z-index: 2;
     line-height: 1;
     letter-spacing: -0.05em;
