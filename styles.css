@@ -389,6 +389,11 @@ p {
     border-radius: 12px;
 }
 
+.text-orange {
+    color: #e67e22;
+    font-weight: 700;
+}
+
 .flow-header {
     text-align: center;
     margin-bottom: 3rem;
