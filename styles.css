@@ -362,27 +362,30 @@ p {
 }
 
 .card-header-row {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
     gap: 1.2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .card-num {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #f1f5f9;
+    color: #e2e8f0; /* Balanced grey as in Image (Right) */
     line-height: 1;
+    margin: 0;
 }
 
 .card-tag {
     background: var(--primary);
     color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.2rem;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 700;
     white-space: nowrap;
+    margin: 0;
 }
 
 .card-text {
