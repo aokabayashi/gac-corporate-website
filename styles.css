@@ -358,9 +358,13 @@ p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     text-align: left;
-    text-decoration: none; /* for <a> tag */
-    color: inherit; /* for <a> tag */
-    display: block; /* for <a> tag */
+    text-decoration: none !important; /* Remove blue underline */
+    color: inherit !important;
+    display: block;
+}
+
+.value-card * {
+    text-decoration: none !important;
 }
 
 .value-card:hover {
