@@ -464,20 +464,17 @@ p {
 
 .flow-main {
     position: relative;
-    padding-left: 2.5rem;
-    border-left: 4px solid #cbd5e1;
+    padding-left: 2.2rem;
+    border-left: 3px solid #cbd5e1;
 }
 
 .flow-main::before {
     content: '';
     position: absolute;
-    left: -10px; /* Centered on 4px border: (-10 + 8)/2? No. 4px is at 0-4. Center is 2. Dot width 16. 2 - 8 = -6. Wait. */
-    /* If border is 4px, left edge is 0. Center is -2px. */
-    /* Dot width 12: left = -2 - 6 = -8px. */
-    /* Let's use width 16 for a bolder dot. left = -2 - 8 = -10px. */
+    left: -7.5px; /* Centered on 3px border (center at -1.5px, width 12px) */
     top: 10px;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background: var(--accent);
     border-radius: 50%;
     z-index: 2;
@@ -487,13 +484,13 @@ p {
 .flow-main::after {
     content: '';
     position: absolute;
-    left: -10px; /* Centered on 4px border (center at -2px, width 16px) */
-    bottom: -15px;
+    left: -8.5px; /* Centered on 3px border (center at -1.5px, width 14px) */
+    bottom: -11px;
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 12px solid #cbd5e1;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 11px solid #cbd5e1;
 }
 
 .flow-item:last-child .flow-main {
