@@ -492,7 +492,8 @@ p {
     border-left-color: transparent;
 }
 
-.flow-item:last-child .flow-main::before {
+.flow-item:last-child .flow-main::before,
+.flow-item:last-child .flow-main::after {
     display: none;
 }
 
