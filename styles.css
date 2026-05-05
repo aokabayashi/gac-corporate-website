@@ -403,6 +403,25 @@ p {
 .flow-subtitle {
     color: var(--text-muted);
     font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.flow-message-box {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid var(--primary);
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.flow-message-box p {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
 }
 
 .flow-container {
@@ -441,7 +460,7 @@ p {
 .flow-main {
     position: relative;
     padding-left: 2rem;
-    border-left: 2px solid #e2e8f0;
+    border-left: 2px solid #cbd5e1;
 }
 
 .flow-main::before {
@@ -453,6 +472,36 @@ p {
     height: 12px;
     background: var(--accent);
     border-radius: 50%;
+    z-index: 2;
+}
+
+/* Arrow at the bottom of the line */
+.flow-main::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #cbd5e1;
+    border-bottom: 2px solid #cbd5e1;
+    transform: rotate(45deg);
+}
+
+.flow-item:last-child .flow-main {
+    border-left-color: transparent;
+}
+
+.flow-item:last-child .flow-main::before {
+    display: none;
+}
+
+.flow-tag-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .flow-tag {
@@ -463,7 +512,25 @@ p {
     border-radius: 4px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+}
+
+.flow-catchphrase {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+}
+
+.flow-catchphrase::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+    transform: translateY(-50%);
 }
 
 .flow-content ol {
@@ -791,6 +858,19 @@ p {
     .flow-main {
         margin-top: 1rem;
         padding-left: 1.5rem;
+    }
+    
+    .flow-tag-row {
+        gap: 0.5rem;
+    }
+    
+    .flow-message-box {
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .flow-message-box p {
+        font-size: 0.9rem;
     }
     
     .flow-divider {
