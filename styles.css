@@ -474,14 +474,14 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 1px; /* Precision adjustment based on previous offset feedback */
+    padding-top: 2px; /* Center-line tweak */
 }
 
 .phase-title {
     font-weight: 700;
     color: var(--primary);
     font-size: 1.1rem;
-    line-height: 1.2; /* Tighter line height for better centering control */
+    line-height: 1; /* Match header row */
 }
 
 .phase-duration {
@@ -500,23 +500,23 @@ p {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 14px; /* EXACT CENTER of the sequence number in Phase 1 */
     width: 3px;
-    height: 100%;
+    height: calc(100% - 14px);
     background: #cbd5e1;
     z-index: 1;
 }
 
 .flow-dot {
     position: absolute;
-    left: 1.5px; /* Center of the 3px line */
-    transform: translateX(-50%);
-    top: 4px; /* Precision downward shift to match tag center */
-    font-size: 1.4rem; /* Slightly smaller for more elegant balance */
+    left: -2.35rem; /* Precise negative margin to sit on the timeline */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
     font-weight: 800;
     color: #cbd5e1;
-    background: #f8fafc; /* Match Value Flow background to mask line */
-    padding: 0 5px;
+    background: #f8fafc;
+    padding: 0 4px;
     z-index: 2;
     line-height: 1;
     letter-spacing: -0.05em;
