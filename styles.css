@@ -1046,11 +1046,18 @@ p {
         font-size: 0.9rem;
     }
     
+    .team-stats-list {
+        gap: 0.85rem;
+    }
+    
     .team-stats-list li {
         width: 100%;
-        max-width: none; /* 制限を解除し、画面端までゆとりを持たせる */
-        font-size: 0.8rem; /* 更にサイズを下げて余白を確保 */
-        gap: 20px;
+        max-width: none; /* 左右ではなく上下を詰めるため、横幅制限は解除 */
+        font-size: 0.8rem;
+        gap: 15px;
+    }
+    .team-stats-list .count {
+        font-size: 1.05rem; /* 数字を小さくしてバランスを取る */
     }
     .flow-tag-row {
         flex-direction: column;
