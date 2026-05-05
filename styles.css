@@ -972,6 +972,11 @@ p {
         padding-bottom: 0.5rem;
         background-color: transparent;
         padding-top: 1.5rem;
+        border-bottom: none; /* スマホ版では見出し下の線を消去 */
+    }
+    .profile-card h4 {
+        border-bottom: none; /* 代表者名の下の線を消去 */
+        margin-bottom: 0.5rem;
     }
     .company-table td {
         padding-top: 0;
