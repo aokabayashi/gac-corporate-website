@@ -494,7 +494,7 @@ p {
 
 .flow-item:last-child .flow-main::before,
 .flow-item:last-child .flow-main::after {
-    display: none;
+    display: none !important;
 }
 
 .flow-tag-row {
