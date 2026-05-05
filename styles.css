@@ -1047,4 +1047,7 @@ p {
     .flow-catchphrase::before {
         display: none;
     }
+    .pc-only {
+        display: none;
+    }
 }
