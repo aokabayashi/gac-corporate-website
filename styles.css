@@ -500,11 +500,22 @@ p {
     content: '';
     position: absolute;
     left: 0;
-    top: 14px; /* EXACT CENTER of the sequence number in Phase 1 */
+    top: 0;
     width: 3px;
-    height: calc(100% - 14px);
+    height: 100%;
     background: #cbd5e1;
     z-index: 1;
+}
+
+/* Only Phase 1 line starts from the number's center */
+.flow-item:first-of-type .flow-main::before {
+    top: 14px;
+    height: calc(100% - 14px);
+}
+
+/* Only last phase line ends at the number's center */
+.flow-item:last-of-type .flow-main::before {
+    height: 14px;
 }
 
 .flow-dot {
