@@ -471,7 +471,7 @@ p {
 .flow-main::before {
     content: '';
     position: absolute;
-    left: -7.5px; /* Centered on 3px border (center at -1.5px, width 12px) */
+    left: -4.5px; /* Centered on 3px border (center at 1.5px, width 12px -> 1.5 - 6 = -4.5) */
     top: 10px;
     width: 12px;
     height: 12px;
@@ -484,8 +484,8 @@ p {
 .flow-main::after {
     content: '';
     position: absolute;
-    left: -8.5px; /* Centered on 3px border (center at -1.5px, width 14px) */
-    bottom: -11px;
+    left: -5.5px; /* Centered on 3px border (center at 1.5px, width 14px -> 1.5 - 7 = -5.5) */
+    bottom: 0;
     width: 0;
     height: 0;
     border-left: 7px solid transparent;
