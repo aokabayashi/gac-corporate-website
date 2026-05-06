@@ -1127,6 +1127,11 @@ p {
     
     .value-cards {
         grid-template-columns: 1fr;
+        gap: 1.05rem; /* 1.5remから30%削減 */
+    }
+
+    .value-card {
+        padding-bottom: 1.75rem; /* 2.5remから30%削減 */
     }
     
     .card-header-row {
