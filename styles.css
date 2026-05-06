@@ -1,6 +1,6 @@
 :root {
     /* Color Palette - Intellectual & Trust */
-    --primary: #002B5B; /* GAC Logo Navy */
+    --primary: #0F172A; /* Deep Navy Blue (Original) */
     --primary-light: #1E293B;
     --accent: #D4AF37;  /* Subtle Gold */
     --accent-hover: #F3C453;
@@ -470,7 +470,7 @@ p {
 }
 
 .text-navy-bold {
-    color: var(--primary);
+    color: #002B5B; /* GAC Logo Navy */
     font-weight: 700;
 }
 
