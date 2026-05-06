@@ -894,6 +894,34 @@ p {
     text-align: right;    /* 右端にピタッと揃える */
 }
 
+.design-division {
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    border: 1.5px solid var(--primary);
+    text-align: center;
+    background: white;
+}
+
+.design-division h4 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+.design-division h4 span {
+    font-weight: normal;
+    color: #cbd5e1;
+    margin: 0 0.5rem;
+}
+
+.design-division p {
+    line-height: 1.8;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .about-grid {
@@ -1080,6 +1108,17 @@ p {
     }
     .pc-only {
         display: none;
+    }
+    .design-division {
+        margin-top: 3rem;
+        padding: 2rem 1rem;
+    }
+    .design-division h4 {
+        font-size: 1.3rem;
+    }
+    .design-division p {
+        font-size: 0.9rem;
+        text-align: left;
     }
     .team-long-description, .flow-message-box p {
         text-align: left; /* Mobile-only left align */
