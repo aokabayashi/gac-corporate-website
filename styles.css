@@ -1007,7 +1007,7 @@ p {
     }
     
     .section-header {
-        margin-bottom: 2.8rem; /* スマホ版のみ30%詰める（元の4remから） */
+        margin-bottom: 2.0rem; /* スマホ版のみ50%詰める（元の4remから） */
     }
     
     .hero-title {
