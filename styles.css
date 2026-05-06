@@ -1203,6 +1203,10 @@ p {
     .team-long-description {
         text-align: left; /* スマホ版のみ左寄せ */
     }
+
+    .about-paragraph:last-of-type {
+        margin-bottom: 0; /* スマホ版のみ、最後の段落の下の余白を詰める */
+    }
     .pc-only {
         display: none !important;
     }
