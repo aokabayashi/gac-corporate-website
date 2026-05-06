@@ -511,6 +511,38 @@ p {
     text-align: center; /* Maintained center-align for PC */
 }
 
+/* Flow Images Grid */
+.flow-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.flow-img-wrapper {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.flow-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #475569;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .flow-container {
     display: flex;
     flex-direction: column;
@@ -1151,6 +1183,11 @@ p {
     .flow-message-box {
         padding: 0.48rem;
         width: 100%;
+    }
+
+    .flow-images-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
     }
     
     .flow-message-box p {
