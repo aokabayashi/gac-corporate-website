@@ -890,6 +890,8 @@ p {
     color: var(--primary);
     font-weight: 700;
     font-size: 1.2rem;
+    min-width: 60px;     /* 数字エリアの幅を固定してズレを防止 */
+    text-align: right;    /* 右端にピタッと揃える */
 }
 
 /* Responsive */
