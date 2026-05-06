@@ -1091,7 +1091,15 @@ p {
     }
     
     .value-flow {
-        padding: 2rem 1rem;
+        padding: 1.2rem 1rem;
+    }
+    
+    .flow-header {
+        margin-bottom: 1.8rem;
+    }
+    
+    .flow-title {
+        margin-bottom: 0.3rem;
     }
     
     .flow-item {
@@ -1132,7 +1140,7 @@ p {
     }
     
     .flow-message-box {
-        padding: 1rem;
+        padding: 0.6rem;
         width: 100%;
     }
     
