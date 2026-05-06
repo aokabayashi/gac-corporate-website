@@ -456,8 +456,7 @@ p {
     font-weight: 700;
     font-size: 1.0rem;
     margin: 0;
-    line-height: 1.6;
-    letter-spacing: 0.02em;
+    line-height: 2em;
     text-align: center; /* Maintained center-align for PC */
 }
 
