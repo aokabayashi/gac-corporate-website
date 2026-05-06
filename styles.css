@@ -27,6 +27,11 @@
     display: none;
 }
 
+/* スマホ専用改行：PCでは非表示、モバイルで有効化 */
+.mobile-br {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
