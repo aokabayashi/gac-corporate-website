@@ -524,11 +524,14 @@ p {
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid #e2e8f0;
+    aspect-ratio: 16 / 10;
 }
 
 .flow-img-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
     display: block;
 }
 
