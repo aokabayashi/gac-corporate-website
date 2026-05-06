@@ -923,7 +923,7 @@ p {
     border: 1.5px solid var(--primary);
     text-align: center;
     background: white;
-    max-width: 750px;   /* 3行目が1行に収まるよう拡大 */
+    max-width: 830px;   /* 3行目の「す。」まで確実に収まるよう拡大 */
     margin-left: auto;
     margin-right: auto;
 }
