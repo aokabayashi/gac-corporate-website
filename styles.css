@@ -23,6 +23,9 @@
 .pc-only {
     display: block;
 }
+br.pc-only {
+    display: initial;
+}
 .mobile-only {
     display: none;
 }
@@ -295,9 +298,31 @@ p {
     color: var(--text-main);
 }
 
+.about-paragraph {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.about-paragraph::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #cbd5e1;
+}
+
+.text-accent-blue {
+    color: #3b5a82;
+    font-weight: 700;
+}
+
 .about-image-wrapper {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     box-shadow: var(--shadow-hover);
     position: relative;
@@ -1171,8 +1196,12 @@ p {
         text-align: center;
         line-height: 1.8;   /* 文字サイズに合わせ、行間を最適化 */
     }
-    .team-long-description, .flow-message-box p {
+    .flow-message-box p {
         text-align: center; /* 1行になったのでスマホでもセンター揃えが美しい */
+    }
+
+    .team-long-description {
+        text-align: left; /* スマホ版のみ左寄せ */
     }
     .pc-only {
         display: none !important;
