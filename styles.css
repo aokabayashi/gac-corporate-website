@@ -526,6 +526,201 @@ p {
     top: 5px; /* Precision downward shift to match tag center */
     width: 2.5rem; /* Fixed width to ensure stable centering regardless of font glyph width */
     text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: var(--primary-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Value Section */
+.value-section {
+    background-color: var(--bg-alt);
+}
+
+.value-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: left;
+    text-decoration: none !important; /* Remove blue underline */
+    color: inherit !important;
+    display: block;
+}
+
+.value-card * {
+    text-decoration: none !important;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card-header-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.card-num {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #e2e8f0; /* Balanced grey as in Image (Right) */
+    line-height: 1;
+    margin: 0;
+}
+
+.card-tag {
+    background: var(--primary);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.card-text {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* Value Flow Section */
+.value-flow {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: var(--bg-main);
+    border-radius: 12px;
+}
+
+.text-orange {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+.flow-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.flow-title {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.flow-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.flow-message-box {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-top: 1rem;
+}
+
+.flow-message-box p {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-align: center; /* Maintained center-align for PC */
+}
+
+.flow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.flow-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    scroll-margin-top: 120px; /* Offset to keep target title visible below the header */
+}
+
+.flow-side {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5px; /* Precision downward shift to match tag row center */
+}
+
+.phase-title {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.1rem;
+    line-height: 1; /* Match header row */
+}
+
+.phase-duration {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+}
+
+.flow-main {
+    position: relative;
+    padding-left: 2.2rem;
+}
+
+/* The Vertical Line */
+.flow-main::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #cbd5e1;
+    z-index: 1;
+}
+
+/* Only Phase 1 line starts from the number's center */
+.flow-item:first-of-type .flow-main::before {
+    top: 15px;
+    height: calc(100% - 15px);
+}
+
+/* Only last phase line ends at the number's center */
+.flow-item:last-of-type .flow-main::before {
+    height: 15px;
+}
+
+.flow-dot {
+    position: absolute;
+    left: 1.5px;
+    transform: translateX(-50%);
+    top: 5px; /* Precision downward shift to match tag center */
+    width: 2.5rem; /* Fixed width to ensure stable centering regardless of font glyph width */
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 800;
     color: #cbd5e1;
@@ -907,23 +1102,27 @@ p {
     background: white;
 }
 
-.design-division h4 {
+.design-division-header {
     font-size: 1.6rem;
-    color: var(--text-main); /* Design Division は黒寄り */
+    color: var(--text-main);
     margin-bottom: 1.5rem;
     letter-spacing: 0.05em;
     font-weight: 700;
 }
 
-.design-division h4 .divider {
+.design-division-header .divider {
     font-weight: normal;
     color: #cbd5e1;
     margin: 0 0.8rem;
 }
 
-.design-division h4 .brand-name {
-    color: #777; /* 画像に合わせたグレー寄りの色 */
-    font-weight: 900; /* ロゴらしく極太に */
+.design-division-header .brand-name {
+    color: #777;
+    font-weight: 900;
+}
+
+.mobile-br {
+    display: none;
 }
 
 .design-division p {
@@ -1120,12 +1319,25 @@ p {
     .pc-only {
         display: none;
     }
+    .mobile-br {
+        display: block;
+    }
     .design-division {
         margin-top: 3rem;
         padding: 2rem 1rem;
     }
-    .design-division h4 {
+    .design-division-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
         font-size: 1.3rem;
+    }
+    .design-division-header .divider {
+        display: none;
+    }
+    .design-division-header .brand-name {
+        font-size: 1.5rem;
     }
     .design-division p {
         font-size: 0.9rem;
