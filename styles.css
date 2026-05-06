@@ -852,6 +852,11 @@ p {
     margin: 0 auto;
 }
 
+.team-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
 .team-long-description {
     line-height: 2;
     color: var(--text-main);
