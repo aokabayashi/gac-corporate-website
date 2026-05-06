@@ -923,6 +923,9 @@ p {
     border: 1.5px solid var(--primary);
     text-align: center;
     background: white;
+    max-width: 680px;   /* ボックスが横長になりすぎないように制限 */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .design-division-header {
