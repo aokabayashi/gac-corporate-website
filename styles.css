@@ -581,6 +581,7 @@ p {
 .flow-main {
     position: relative;
     padding-left: 2.2rem;
+    padding-bottom: 2.5rem; /* 矢印の位置を下げるために余白を追加 */
 }
 
 /* The Vertical Line */
@@ -1150,6 +1151,7 @@ p {
     .flow-main {
         margin-top: 0.5rem;
         padding-left: 1.5rem;
+        padding-bottom: 2rem;
         border-left: none;
     }
     
