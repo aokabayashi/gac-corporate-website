@@ -315,6 +315,18 @@ p {
     background-color: #cbd5e1;
 }
 
+.about-block-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.about-paragraph p {
+    margin-bottom: 0;
+}
+
 .text-accent-blue {
     color: #3b5a82;
     font-weight: 700;
