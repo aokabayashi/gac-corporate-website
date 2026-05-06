@@ -443,12 +443,13 @@ p {
 
 .flow-message-box {
     display: inline-block;
-    padding: 1.5rem 3rem;
+    padding: 1.2rem 2.5rem;
+    max-width: 95%; /* スマホでもはみ出さないように */
     border: 1px solid #e2e8f0;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    margin-top: 1rem;
+    margin: 1rem auto 0;
 }
 
 .flow-message-box p {
@@ -1154,6 +1155,6 @@ p {
         line-height: 1.8;   /* 文字サイズに合わせ、行間を最適化 */
     }
     .team-long-description, .flow-message-box p {
-        text-align: left; /* Mobile-only left align */
+        text-align: center; /* 1行になったのでスマホでもセンター揃えが美しい */
     }
 }
