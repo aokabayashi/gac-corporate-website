@@ -1002,6 +1002,10 @@ p {
         grid-template-columns: 1fr;
     }
     
+    .section {
+        padding: 2.7rem 0; /* 元の6remから55%削減 */
+    }
+    
     .section-header {
         margin-bottom: 2.8rem; /* スマホ版のみ30%詰める（元の4remから） */
     }
