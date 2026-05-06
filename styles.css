@@ -469,8 +469,8 @@ p {
     border-radius: 12px;
 }
 
-.text-orange {
-    color: #e67e22;
+.text-navy-bold {
+    color: var(--primary);
     font-weight: 700;
 }
 
