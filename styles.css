@@ -904,15 +904,21 @@ p {
 
 .design-division h4 {
     font-size: 1.6rem;
-    color: var(--primary);
+    color: var(--text-main); /* Design Division は黒寄り */
     margin-bottom: 1.5rem;
     letter-spacing: 0.05em;
+    font-weight: 700;
 }
 
-.design-division h4 span {
+.design-division h4 .divider {
     font-weight: normal;
     color: #cbd5e1;
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
+}
+
+.design-division h4 .brand-name {
+    color: #777; /* 画像に合わせたグレー寄りの色 */
+    font-weight: 900; /* ロゴらしく極太に */
 }
 
 .design-division p {
