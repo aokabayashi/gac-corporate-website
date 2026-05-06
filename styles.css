@@ -338,7 +338,7 @@ p {
 }
 
 .about-image-wrapper:hover .about-img {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .glass-card {
