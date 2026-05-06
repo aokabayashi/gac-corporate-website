@@ -513,8 +513,7 @@ p {
 
 /* Flow Images Grid */
 .flow-images-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 0.8rem;
     margin: 1rem 0;
 }
@@ -524,15 +523,15 @@ p {
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid #e2e8f0;
-    aspect-ratio: 16 / 10;
+    flex: 0 1 auto; /* 自然な幅を維持 */
 }
 
 .flow-img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left center;
+    height: 220px; /* PC版では上下（高さ）を揃える */
+    width: auto;
+    max-width: 100%;
     display: block;
+    object-fit: contain; /* トリミングしない */
 }
 
 .img-label {
@@ -1191,8 +1190,13 @@ p {
     }
 
     .flow-images-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 0.8rem;
+    }
+    
+    .flow-img-wrapper img {
+        width: 100%; /* スマホ版では左右（幅）を揃える */
+        height: auto;
     }
     
     .flow-message-box p {
