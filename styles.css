@@ -1204,6 +1204,12 @@ p {
         text-align: center; /* 1行になったのでスマホでもセンター揃えが美しい */
     }
 
+    .duration-guide {
+        border-top: none;
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+    }
+
     .team-long-description {
         text-align: left; /* スマホ版のみ左寄せ */
     }
