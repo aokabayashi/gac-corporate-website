@@ -1133,7 +1133,7 @@ p {
     }
     .design-division {
         margin-top: 3rem;
-        padding: 2rem 0.7rem; /* 左右余白を削って文字エリアを確保 */
+        padding: 2rem 0.8rem; /* 文字サイズ拡大に合わせ、わずかに余白を調整 */
     }
     .design-division-header {
         display: flex;
@@ -1149,9 +1149,9 @@ p {
         font-size: 1.5rem;
     }
     .design-division p {
-        font-size: 0.75rem; /* 最小幅のスマホでも絶対に溢れないサイズに変更 */
+        font-size: 0.9rem;  /* 指定の改行位置で1行に収まる最大級のサイズに拡大 */
         text-align: center;
-        line-height: 2;     /* 文字を小さくした分、行間を広げて視認性を向上 */
+        line-height: 1.8;   /* 文字サイズに合わせ、行間を最適化 */
     }
     .team-long-description, .flow-message-box p {
         text-align: left; /* Mobile-only left align */
