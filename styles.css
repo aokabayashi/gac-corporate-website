@@ -19,6 +19,14 @@
     white-space: nowrap;
 }
 
+/* PC/スマホ表示切り替え用ユーティリティ */
+.pc-only {
+    display: block;
+}
+.mobile-only {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1156,5 +1164,11 @@ p {
     }
     .team-long-description, .flow-message-box p {
         text-align: center; /* 1行になったのでスマホでもセンター揃えが美しい */
+    }
+    .pc-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: block !important;
     }
 }
