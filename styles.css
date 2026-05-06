@@ -1149,8 +1149,8 @@ p {
         font-size: 1.5rem;
     }
     .design-division p {
-        font-size: 0.9rem;
-        text-align: center; /* センター揃えに変更してバランスを最適化 */
+        font-size: 0.82rem; /* 少し小さくしてスマホで1行に綺麗に収める */
+        text-align: center;
     }
     .team-long-description, .flow-message-box p {
         text-align: left; /* Mobile-only left align */
