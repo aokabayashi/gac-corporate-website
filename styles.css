@@ -1130,11 +1130,11 @@ p {
     }
     
     .value-flow {
-        padding: 0.96rem 1rem;
+        padding: 0.5rem 1rem; /* 0.96remから削減 */
     }
     
     .flow-header {
-        margin-bottom: 1.44rem;
+        margin-bottom: 0.75rem; /* 1.44remから約半分に削減 */
     }
     
     .flow-title {
@@ -1144,6 +1144,7 @@ p {
     .flow-item {
         grid-template-columns: 1fr;
         gap: 0rem;
+        padding: 1rem 0; /* 2remから半分に削減 */
     }
     
     .flow-side {
