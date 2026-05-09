@@ -1063,7 +1063,7 @@ p {
         backdrop-filter: blur(12px) !important;
         -webkit-backdrop-filter: blur(12px) !important;
         box-shadow: var(--shadow-subtle) !important;
-        padding: 1rem 0 !important;
+        padding: 0.7rem 0 !important; /* 1remから30%削減 */
     }
     
     .navbar .logo, .navbar .nav-links a {
@@ -1080,6 +1080,7 @@ p {
     
     .nav-links a {
         font-size: 0.85rem !important;
+        line-height: 0.85 !important; /* 1.2から約30%削減 */
     }
     
     .logo-img {
