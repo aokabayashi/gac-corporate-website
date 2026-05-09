@@ -1164,6 +1164,7 @@ p {
     .value-cards {
         grid-template-columns: 1fr;
         gap: 1.05rem; /* 1.5remから30%削減 */
+        margin-bottom: 2.5rem; /* 5remから半分に削減 */
     }
 
     .value-card {
