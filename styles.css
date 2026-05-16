@@ -1294,7 +1294,10 @@ p {
         line-height: 1.8;   /* 文字サイズに合わせ、行間を最適化 */
     }
     .flow-message-box p {
-        text-align: center; /* 1行になったのでスマホでもセンター揃えが美しい */
+        text-align: center;
+        font-size: 1.1rem; /* Slightly larger as requested */
+        line-height: 1.6;
+        text-wrap: balance; /* Balances line lengths automatically */
     }
 
     .duration-guide {
