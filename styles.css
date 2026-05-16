@@ -1307,6 +1307,7 @@ p {
         text-align: left;
         font-size: 0.9rem; /* 10% smaller to improve fit */
         line-height: 1.8;
+        text-wrap: balance; /* Automatically balances line lengths to avoid orphans */
     }
 
     .container {
