@@ -252,6 +252,20 @@ p {
     font-weight: 400;
 }
 
+.hero-watermark {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgba(15, 23, 42, 0.75); /* Navy with transparency */
+    color: white;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 5;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+}
+
 /* Sections General */
 .section {
     padding: 6rem 0;
@@ -1297,6 +1311,16 @@ p {
 
     .container {
         padding: 0 1.5rem; /* Slightly more room for text */
+    }
+
+    .hero-watermark {
+        bottom: 15px;
+        right: 50%;
+        transform: translateX(50%);
+        font-size: 0.8rem;
+        padding: 5px 12px;
+        width: max-content;
+        letter-spacing: 0;
     }
 
     .about-paragraph:last-of-type {
