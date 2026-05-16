@@ -35,6 +35,11 @@ br.pc-only {
     display: none;
 }
 
+.ib {
+    display: inline-block;
+    white-space: nowrap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1295,9 +1300,9 @@ p {
     }
     .flow-message-box p {
         text-align: center;
-        font-size: 1.1rem; /* Slightly larger as requested */
-        line-height: 1.6;
-        text-wrap: balance; /* Balances line lengths automatically */
+        font-size: 1.05rem; /* Balanced size */
+        line-height: 1.7;
+        text-wrap: balance;
     }
 
     .duration-guide {
