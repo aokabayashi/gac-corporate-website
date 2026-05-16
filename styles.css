@@ -1290,7 +1290,13 @@ p {
     }
 
     .team-long-description {
-        text-align: left; /* スマホ版のみ左寄せ */
+        text-align: left;
+        font-size: 0.9rem; /* 10% smaller to improve fit */
+        line-height: 1.8;
+    }
+
+    .container {
+        padding: 0 1.5rem; /* Slightly more room for text */
     }
 
     .about-paragraph:last-of-type {
