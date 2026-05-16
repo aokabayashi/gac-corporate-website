@@ -1299,13 +1299,9 @@ p {
         line-height: 1.8;   /* 文字サイズに合わせ、行間を最適化 */
     }
     .flow-message-box p {
-        display: inline-block; /* Centers the block itself */
-        text-align: left;      /* Left-aligns lines within the block */
-        font-size: 1.0rem;     /* Back to natural size for better fit */
+        text-align: center;
+        font-size: 1.0rem;
         line-height: 1.7;
-    }
-    .flow-message-box {
-        text-align: center;    /* Parent centers the p block */
     }
 
     .duration-guide {
