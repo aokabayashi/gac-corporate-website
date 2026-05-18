@@ -1164,6 +1164,18 @@ p {
     width: 100%;
 }
 
+.works-img-wrapper:not(.stretch-img) {
+    aspect-ratio: 4/3;
+}
+
+.works-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 .works-info-box {
     border: 1px solid var(--primary);
     display: flex;
@@ -1225,28 +1237,11 @@ p {
     color: var(--primary);
 }
 
-.works-col-left .works-img-wrapper {
-    aspect-ratio: 4/3;
-}
-
-.works-col-left .works-img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .works-col-right .stretch-img {
     flex: 1;
     height: 100%;
 }
 
-.works-col-right .stretch-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 
 .badge-before, .badge-after {
     position: absolute;
