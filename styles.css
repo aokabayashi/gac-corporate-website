@@ -1,8 +1,10 @@
 :root {
     /* Color Palette - Intellectual & Trust */
-    --primary: #0F172A; /* Deep Navy Blue (Original) */
+    --primary: #0F172A;
+    /* Deep Navy Blue (Original) */
     --primary-light: #1E293B;
-    --accent: #D4AF37;  /* Subtle Gold */
+    --accent: #D4AF37;
+    /* Subtle Gold */
     --accent-hover: #F3C453;
     --text-main: #334155;
     --text-muted: #64748B;
@@ -23,9 +25,11 @@
 .pc-only {
     display: block;
 }
+
 br.pc-only {
     display: initial;
 }
+
 .mobile-only {
     display: none;
 }
@@ -70,7 +74,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--primary);
     line-height: 1.2;
 }
@@ -155,18 +162,22 @@ p {
     display: block;
 }
 
-.navbar.scrolled .logo, .navbar.scrolled .nav-links a {
+.navbar.scrolled .logo,
+.navbar.scrolled .nav-links a {
     color: var(--primary);
 }
-.navbar.transparent .logo, .navbar.transparent .nav-links a {
+
+.navbar.transparent .logo,
+.navbar.transparent .nav-links a {
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links {
     display: flex;
     gap: 2rem;
     align-items: center;
+    flex-wrap: wrap !important; /* Force link wrapping inside mobile navbar */
 }
 
 .nav-links a {
@@ -214,11 +225,12 @@ p {
     position: absolute;
     width: 150vw;
     height: 150vw;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     top: -50vw;
     right: -25vw;
 }
+
 .hero::after {
     content: '';
     position: absolute;
@@ -261,7 +273,8 @@ p {
     position: absolute;
     bottom: 30px;
     right: 30px;
-    background-color: rgba(15, 23, 42, 0.4); /* Thinner navy transparency */
+    background-color: rgba(15, 23, 42, 0.4);
+    /* Thinner navy transparency */
     color: white;
     padding: 6px 16px;
     font-size: 0.95rem;
@@ -307,7 +320,8 @@ p {
 /* About Section */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile first: 1 column by default */
+    grid-template-columns: 1fr;
+    /* Mobile first: 1 column by default */
     gap: 4rem;
     align-items: center;
 }
@@ -401,9 +415,21 @@ p {
     position: relative;
     opacity: 0.3;
 }
-.line-1 { transform: translateX(-20px); width: 80%; }
-.line-2 { transform: translateX(20px); }
-.line-3 { transform: translateX(-10px); width: 40%; }
+
+.line-1 {
+    transform: translateX(-20px);
+    width: 80%;
+}
+
+.line-2 {
+    transform: translateX(20px);
+}
+
+.line-3 {
+    transform: translateX(-10px);
+    width: 40%;
+}
+
 .structure-card span {
     margin-top: 2rem;
     font-weight: 500;
@@ -420,7 +446,8 @@ p {
 
 .value-cards {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile first: 1 column by default */
+    grid-template-columns: 1fr;
+    /* Mobile first: 1 column by default */
     gap: 1.5rem;
     margin-bottom: 5rem;
 }
@@ -432,7 +459,8 @@ p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     text-align: left;
-    text-decoration: none !important; /* Remove blue underline */
+    text-decoration: none !important;
+    /* Remove blue underline */
     color: inherit !important;
     display: block;
 }
@@ -457,7 +485,8 @@ p {
 .card-num {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #e2e8f0; /* Balanced grey as in Image (Right) */
+    color: #e2e8f0;
+    /* Balanced grey as in Image (Right) */
     line-height: 1;
     margin: 0;
 }
@@ -489,7 +518,8 @@ p {
 }
 
 .text-navy-bold {
-    color: #002B5B; /* GAC Logo Navy */
+    color: #002B5B;
+    /* GAC Logo Navy */
     font-weight: 700;
 }
 
@@ -513,7 +543,8 @@ p {
 .flow-message-box {
     display: inline-block;
     padding: 1.2rem 2.5rem;
-    max-width: 95%; /* スマホでもはみ出さないように */
+    max-width: 95%;
+    /* スマホでもはみ出さないように */
     border: 1px solid #e2e8f0;
     background-color: white;
     border-radius: 12px;
@@ -527,7 +558,8 @@ p {
     font-size: 1.0rem;
     margin: 0;
     line-height: 2em;
-    text-align: center; /* Maintained center-align for PC */
+    text-align: center;
+    /* Maintained center-align for PC */
 }
 
 /* Flow Images Grid */
@@ -542,15 +574,18 @@ p {
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid #e2e8f0;
-    flex: 0 1 auto; /* 自然な幅を維持 */
+    flex: 0 1 auto;
+    /* 自然な幅を維持 */
 }
 
 .flow-img-wrapper img {
-    height: 220px; /* PC版では上下（高さ）を揃える */
+    height: 220px;
+    /* PC版では上下（高さ）を揃える */
     width: auto;
     max-width: 100%;
     display: block;
-    object-fit: contain; /* トリミングしない */
+    object-fit: contain;
+    /* トリミングしない */
 }
 
 .img-label {
@@ -575,7 +610,8 @@ p {
     grid-template-columns: 200px 1fr;
     gap: 2rem;
     padding: 2rem 0;
-    scroll-margin-top: 120px; /* Offset to keep target title visible below the header */
+    scroll-margin-top: 120px;
+    /* Offset to keep target title visible below the header */
 }
 
 .flow-side {
@@ -583,14 +619,16 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 5px; /* Precision downward shift to match tag row center */
+    padding-top: 5px;
+    /* Precision downward shift to match tag row center */
 }
 
 .phase-title {
     font-weight: 700;
     color: var(--primary);
     font-size: 1.1rem;
-    line-height: 1; /* Match header row */
+    line-height: 1;
+    /* Match header row */
 }
 
 .phase-duration {
@@ -602,7 +640,8 @@ p {
 .flow-main {
     position: relative;
     padding-left: 2.2rem;
-    padding-bottom: 2.5rem; /* 矢印の位置を下げるために余白を追加 */
+    padding-bottom: 2.5rem;
+    /* 矢印の位置を下げるために余白を追加 */
 }
 
 /* The Vertical Line */
@@ -632,8 +671,10 @@ p {
     position: absolute;
     left: 1.5px;
     transform: translateX(-50%);
-    top: 5px; /* Precision downward shift to match tag center */
-    width: 2.5rem; /* Fixed width to ensure stable centering regardless of font glyph width */
+    top: 5px;
+    /* Precision downward shift to match tag center */
+    width: 2.5rem;
+    /* Fixed width to ensure stable centering regardless of font glyph width */
     text-align: center;
     font-size: 1.4rem;
     font-weight: 800;
@@ -652,7 +693,8 @@ p {
     left: 0;
     right: 0;
     height: 10px;
-    background: #f8fafc; /* Match Value Flow background */
+    background: #f8fafc;
+    /* Match Value Flow background */
     z-index: -1;
 }
 
@@ -660,7 +702,8 @@ p {
 .flow-main::after {
     content: '';
     position: absolute;
-    left: -5.5px; /* Centered on 3px line (center at 1.5px, width 14px -> 1.5 - 7 = -5.5) */
+    left: -5.5px;
+    /* Centered on 3px line (center at 1.5px, width 14px -> 1.5 - 7 = -5.5) */
     bottom: 0;
     width: 0;
     height: 0;
@@ -721,7 +764,7 @@ p {
     counter-reset: flow-counter;
 }
 
-.flow-content ol > li {
+.flow-content ol>li {
     counter-increment: flow-counter;
     position: relative;
     padding-left: 2rem;
@@ -729,11 +772,11 @@ p {
     color: var(--text-main);
 }
 
-.flow-content ol > li:last-child {
+.flow-content ol>li:last-child {
     margin-bottom: 0;
 }
 
-.flow-content ol > li::before {
+.flow-content ol>li::before {
     content: counter(flow-counter);
     position: absolute;
     left: 0;
@@ -762,10 +805,14 @@ p {
 }
 
 .flow-divider {
-    display: block;        /* グリッドではなくブロックとして扱う */
-    width: fit-content;    /* 文字数に合わせる */
-    margin: 1.5rem 0 1.5rem 232px; /* 左端から縦線の位置（232px）までマージンを取る */
-    transform: translateX(-50%);   /* 自分の幅の半分だけ戻して、線を中央にする */
+    display: block;
+    /* グリッドではなくブロックとして扱う */
+    width: fit-content;
+    /* 文字数に合わせる */
+    margin: 1.5rem 0 1.5rem 232px;
+    /* 左端から縦線の位置（232px）までマージンを取る */
+    transform: translateX(-50%);
+    /* 自分の幅の半分だけ戻して、線を中央にする */
     padding: 0.8rem 2.5rem;
     background: #f0f7ff;
     border: 1px solid #cbd5e1;
@@ -773,7 +820,8 @@ p {
     font-weight: 700;
     font-size: 0.9rem;
     color: var(--primary);
-    white-space: nowrap;   /* 改行を防いで幅を安定させる */
+    white-space: nowrap;
+    /* 改行を防いで幅を安定させる */
     z-index: 5;
     position: relative;
 }
@@ -817,7 +865,8 @@ p {
     background: white;
 }
 
-.company-table th, .company-table td {
+.company-table th,
+.company-table td {
     padding: 1.5rem;
     border-bottom: 1px solid #e2e8f0;
     text-align: left;
@@ -912,19 +961,19 @@ p {
 }
 
 .footer-brand p {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
 }
 
 .footer-contact {
     text-align: right;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
 }
 
 .footer-bottom {
     text-align: center;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
     font-size: 0.8rem;
 }
 
@@ -934,6 +983,7 @@ p {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -970,7 +1020,8 @@ p {
     line-height: 2;
     color: var(--text-main);
     margin-bottom: 3.5rem;
-    text-align: center; /* Maintained center-align for PC */
+    text-align: center;
+    /* Maintained center-align for PC */
     font-weight: 500;
 }
 
@@ -992,7 +1043,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 420px; /* Expanded from 320px to fit longer qualification titles in one line */
+    width: 420px;
+    /* Expanded from 320px to fit longer qualification titles in one line */
 }
 
 .team-stats-list .qualification {
@@ -1004,8 +1056,10 @@ p {
     color: var(--primary);
     font-weight: 700;
     font-size: 1.2rem;
-    min-width: 60px;     /* 数字エリアの幅を固定してズレを防止 */
-    text-align: right;    /* 右端にピタッと揃える */
+    min-width: 60px;
+    /* 数字エリアの幅を固定してズレを防止 */
+    text-align: right;
+    /* 右端にピタッと揃える */
 }
 
 .design-division {
@@ -1149,11 +1203,13 @@ p {
 
 .works-detail-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile first: 1 column by default */
+    grid-template-columns: 1fr;
+    /* Mobile first: 1 column by default */
     gap: 15px;
 }
 
-.works-col-left, .works-col-right {
+.works-col-left,
+.works-col-right {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -1243,7 +1299,8 @@ p {
 }
 
 
-.badge-before, .badge-after {
+.badge-before,
+.badge-after {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -1271,7 +1328,7 @@ p {
     font-weight: 700;
     color: #fff;
     z-index: 2;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 html {
@@ -1284,172 +1341,189 @@ html {
         aspect-ratio: 4/3;
         flex: none;
     }
-    
+
     .section {
-        padding: 2.7rem 0; /* 元の6remから55%削減 */
+        padding: 2.7rem 0;
+        /* 元の6remから55%削減 */
     }
-    
+
     .section-header {
-        margin-bottom: 2.0rem; /* スマホ版のみ50%詰める（元の4remから） */
+        margin-bottom: 2.0rem;
+        /* スマホ版のみ50%詰める（元の4remから） */
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero {
         background-position: 30% center;
     }
-    
+
     .nav-container {
         flex-direction: column !important;
         gap: 0.5rem !important;
     }
-    
+
     .navbar {
         background: var(--glass-bg) !important;
         backdrop-filter: blur(12px) !important;
         -webkit-backdrop-filter: blur(12px) !important;
         box-shadow: var(--shadow-subtle) !important;
-        padding: 0.7rem 0 !important; /* 1remから30%削減 */
+        padding: 0.7rem 0 !important;
+        /* 1remから30%削減 */
     }
-    
-    .navbar .logo, .navbar .nav-links a {
+
+    .navbar .logo,
+    .navbar .nav-links a {
         color: var(--primary) !important;
         text-shadow: none !important;
     }
-    
+
     .nav-links {
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
         gap: 1rem !important;
     }
-    
+
     .nav-links a {
         font-size: 0.85rem !important;
-        line-height: 0.85 !important; /* 1.2から約30%削減 */
+        line-height: 0.85 !important;
+        /* 1.2から約30%削減 */
     }
-    
+
     .logo-img {
         height: 34px !important;
     }
-    
+
     .works-info-header {
         padding: 1.2rem 1rem !important;
     }
-    
+
     .works-info-title {
         font-size: 1.05rem !important;
         line-height: 1.3 !important;
         word-break: break-word !important;
     }
-    
+
     .works-info-body {
         padding: 1.2rem !important;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
     }
-    
+
     .profile-card {
         padding: 1.5rem;
     }
-    
+
     .profile-card h4 {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.3rem;
     }
-    
+
     .profile-card h4 .pipe {
         display: none;
     }
-    
+
     .footer-contact {
         text-align: center;
     }
-    
-    .company-table th, .company-table td {
+
+    .company-table th,
+    .company-table td {
         display: block;
         width: 100%;
     }
-    
+
     .company-table th {
         padding-bottom: 0.5rem;
         background-color: transparent;
         padding-top: 1.5rem;
-        border-bottom: none; /* スマホ版では見出し下の線を消去 */
+        border-bottom: none;
+        /* スマホ版では見出し下の線を消去 */
     }
+
     .profile-card h4 {
-        border-bottom: none; /* 代表者名の下の線を消去 */
+        border-bottom: none;
+        /* 代表者名の下の線を消去 */
         margin-bottom: 0.5rem;
     }
+
     .company-table td {
         padding-top: 0;
     }
-    
+
     .value-flow {
-        padding: 0.5rem 1rem; /* 0.96remから削減 */
+        padding: 0.5rem 1rem;
+        /* 0.96remから削減 */
     }
-    
+
     .flow-header {
-        margin-bottom: 0.75rem; /* 1.44remから約半分に削減 */
+        margin-bottom: 0.75rem;
+        /* 1.44remから約半分に削減 */
     }
-    
+
     .flow-title {
         margin-bottom: 0.24rem;
     }
-    
+
     .flow-item {
         grid-template-columns: 1fr;
         gap: 0rem;
-        padding: 1rem 0; /* 2remから半分に削減 */
+        padding: 1rem 0;
+        /* 2remから半分に削減 */
     }
-    
+
     .flow-side {
         text-align: left;
     }
-    
+
     .flow-main {
         margin-top: 0.5rem;
         padding-left: 1.5rem;
         padding-bottom: 2rem;
         border-left: none;
     }
-    
+
     .flow-tag-row {
         gap: 0.5rem;
     }
-    
+
     .value-cards {
         grid-template-columns: 1fr;
-        gap: 0.5rem; /* 1.05remからさらに半分程度に削減 */
-        margin-bottom: 2.5rem; /* 5remから半分に削減 */
+        gap: 0.5rem;
+        /* 1.05remからさらに半分程度に削減 */
+        margin-bottom: 2.5rem;
+        /* 5remから半分に削減 */
     }
 
     .value-card {
-        padding-top: 1.25rem; /* 2.5remから半分に削減 */
-        padding-bottom: 1.25rem; /* 1.75remからさらに削減 */
+        padding-top: 1.25rem;
+        /* 2.5remから半分に削減 */
+        padding-bottom: 1.25rem;
+        /* 1.75remからさらに削減 */
     }
-    
+
     .card-header-row {
         gap: 0.8rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .card-num {
         font-size: 1.8rem;
     }
-    
+
     .card-tag {
         font-size: 0.9rem;
         padding: 0.4rem 1rem;
     }
-    
+
     .flow-message-box {
         padding: 0.48rem;
         width: 100%;
@@ -1459,16 +1533,17 @@ html {
         flex-direction: column;
         gap: 0.8rem;
     }
-    
+
     .flow-img-wrapper img {
-        width: 100%; /* スマホ版では左右（幅）を揃える */
+        width: 100%;
+        /* スマホ版では左右（幅）を揃える */
         height: auto;
     }
-    
+
     .flow-message-box p {
         font-size: 0.9rem;
     }
-    
+
     .flow-divider {
         grid-column: 1;
         margin-left: 0;
@@ -1478,51 +1553,63 @@ html {
         gap: 0.3rem;
         padding: 0.8rem 1rem;
     }
-    
+
     .flow-catchphrase {
         font-size: 0.9rem;
     }
-    
+
     .team-stats-list {
         gap: 0.85rem;
     }
-    
+
     .team-stats-list li {
         width: 100%;
-        max-width: none; 
-        font-size: 0.95rem; /* 文字サイズを戻して読みやすく */
+        max-width: none;
+        font-size: 0.95rem;
+        /* 文字サイズを戻して読みやすく */
         gap: 15px;
     }
+
     .team-stats-list .count {
-        font-size: 1.15rem; /* 数字の存在感を戻す */
+        font-size: 1.15rem;
+        /* 数字の存在感を戻す */
     }
+
     .flow-tag-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
-    
+
     .flow-divider {
-        margin: 1.5rem auto; /* スマホ版はシンプルに中央寄せ */
-        transform: none;      /* PC版のずらし設定を解除 */
+        margin: 1.5rem auto;
+        /* スマホ版はシンプルに中央寄せ */
+        transform: none;
+        /* PC版のずらし設定を解除 */
         width: fit-content;
         padding: 0.8rem 1.5rem;
         display: block;
         text-align: center;
     }
+
     .flow-catchphrase::before {
         display: none;
     }
+
     .pc-only {
         display: none;
     }
+
     .mobile-br {
         display: block;
     }
+
     .design-division {
         margin-top: 3rem;
-        padding: 2rem 0.8rem; /* 文字サイズ拡大に合わせ、わずかに余白を調整 */
+        padding: 2rem 0.8rem;
+        /* 文字サイズ拡大に合わせ、わずかに余白を調整 */
     }
+
     .design-division-header {
         display: flex;
         flex-direction: column;
@@ -1530,17 +1617,23 @@ html {
         gap: 0.5rem;
         font-size: 1.3rem;
     }
+
     .design-division-header .divider {
         display: none;
     }
+
     .design-division-header .brand-name {
         font-size: 1.5rem;
     }
+
     .design-division p {
-        font-size: 0.9rem;  /* 指定の改行位置で1行に収まる最大級のサイズに拡大 */
+        font-size: 0.9rem;
+        /* 指定の改行位置で1行に収まる最大級のサイズに拡大 */
         text-align: center;
-        line-height: 1.8;   /* 文字サイズに合わせ、行間を最適化 */
+        line-height: 1.8;
+        /* 文字サイズに合わせ、行間を最適化 */
     }
+
     .flow-message-box p {
         text-align: center;
         font-size: 1.0rem;
@@ -1555,13 +1648,16 @@ html {
 
     .team-long-description {
         text-align: left;
-        font-size: 0.9rem; /* 10% smaller to improve fit */
+        font-size: 0.9rem;
+        /* 10% smaller to improve fit */
         line-height: 1.8;
-        text-wrap: balance; /* Automatically balances line lengths to avoid orphans */
+        text-wrap: balance;
+        /* Automatically balances line lengths to avoid orphans */
     }
 
     .container {
-        padding: 0 1.5rem; /* Slightly more room for text */
+        padding: 0 1.5rem;
+        /* Slightly more room for text */
     }
 
     .hero-watermark {
@@ -1575,11 +1671,14 @@ html {
     }
 
     .about-paragraph:last-of-type {
-        margin-bottom: 0; /* スマホ版のみ、最後の段落の下の余白を詰める */
+        margin-bottom: 0;
+        /* スマホ版のみ、最後の段落の下の余白を詰める */
     }
+
     .pc-only {
         display: none !important;
     }
+
     .mobile-only {
         display: block !important;
     }
@@ -1590,9 +1689,11 @@ html {
     .about-grid {
         grid-template-columns: 1fr 1fr;
     }
+
     .value-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .works-detail-grid {
         grid-template-columns: 1fr 1.6fr;
     }
