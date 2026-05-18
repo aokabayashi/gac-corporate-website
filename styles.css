@@ -1088,9 +1088,9 @@ p {
     background-color: #888888;
     color: #ffffff;
     display: flex;
-    padding: 1.2rem 1rem;
+    padding: 0.5rem 1rem;
     align-items: center;
-    height: 140px;
+    height: 105px;
     box-sizing: border-box;
 }
 
