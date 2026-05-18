@@ -136,6 +136,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap !important; /* Force natural vertical wrapping on small viewports */
 }
 
 .logo {
