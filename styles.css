@@ -1140,10 +1140,162 @@ p {
     letter-spacing: 0.02em;
 }
 
+/* Works Detail Section (03) */
+.works-detail-section {
+    margin-top: 6rem;
+    padding-top: 4rem;
+    border-top: 1px solid #ddd;
+}
+
+.works-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 15px;
+}
+
+.works-col-left, .works-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.works-img-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.works-info-box {
+    border: 1px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.works-info-header {
+    background-color: #888888;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works-info-title-group {
+    text-align: center;
+}
+
+.works-info-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.works-info-subtitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.works-info-body {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.works-info-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.works-keywords {
+    margin-top: 1.5rem;
+}
+
+.works-keywords .keyword-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.works-keywords .keyword-text {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.works-col-left .works-img-wrapper {
+    aspect-ratio: 4/3;
+}
+
+.works-col-left .works-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.works-col-right .stretch-img {
+    flex: 1;
+    height: 100%;
+}
+
+.works-col-right .stretch-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.badge-before, .badge-after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+
+.badge-before {
+    background-color: #333333;
+}
+
+.badge-after {
+    background-color: var(--primary);
+}
+
+.badge-design {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .works-detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .works-col-right .stretch-img {
+        aspect-ratio: 4/3;
+        flex: none;
     }
     
     .section {
