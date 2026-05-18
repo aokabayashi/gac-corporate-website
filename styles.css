@@ -1050,6 +1050,94 @@ p {
     margin-bottom: 0;
 }
 
+/* Renovation Works Page */
+.renovation-works-section {
+    padding: 120px 0 6rem 0;
+    background-color: #ffffff;
+    min-height: 80vh;
+}
+
+.rw-main-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 3.5rem;
+    letter-spacing: 0.05em;
+}
+
+.rw-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.rw-card {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary);
+    background: #fff;
+}
+
+.rw-card-top {
+    background-color: #888888;
+    color: #ffffff;
+    display: flex;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    min-height: 110px;
+}
+
+.rw-card-num {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    margin-right: 0.5rem;
+    width: 35px;
+}
+
+.rw-card-title-group {
+    flex: 1;
+    text-align: center;
+}
+
+.rw-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+}
+
+.rw-card-subtitle {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.rw-card-bottom {
+    padding: 2rem 1.5rem;
+    min-height: 160px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rw-card-bottom p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .about-grid {
