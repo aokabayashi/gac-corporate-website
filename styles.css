@@ -1088,9 +1088,10 @@ p {
     background-color: #888888;
     color: #ffffff;
     display: flex;
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 1rem;
     align-items: center;
-    height: 120px;
+    height: 130px;
+    box-sizing: border-box;
 }
 
 .rw-card-num {
