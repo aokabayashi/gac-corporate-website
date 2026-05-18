@@ -1337,7 +1337,7 @@ html {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .works-col-right .stretch-img {
         aspect-ratio: 4/3;
         flex: none;
@@ -1686,7 +1686,7 @@ html {
 }
 
 /* PC/Tablet specific styles (min-width: 769px) */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .about-grid {
         grid-template-columns: 1fr 1fr;
     }
