@@ -1128,11 +1128,11 @@ p {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .rw-card-bottom p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-main);
     margin: 0;
